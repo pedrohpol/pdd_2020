@@ -2,7 +2,6 @@ import java.util.*;
 class Fone{
     String nome;
     String numero;
-
     public Fone(String nome, String numero){
         this.nome = nome;
         this.numero = numero;
@@ -19,7 +18,6 @@ class Contato{
     String nomeContato;
     String numero;
     boolean favorito;
-
     public Contato(String nome){
         this.nome = nome;
     }
@@ -51,7 +49,6 @@ class Agenda{
         }
         return -1;
     }
-
     public ArrayList<String> separador(String dados){
         ArrayList<String> saida = new ArrayList<>();
         int contador = 0;
@@ -120,7 +117,6 @@ class Agenda{
             System.out.println("contato inexistente");
         }
     }
-
     public void search(String padrao){
         ArrayList<Integer> resultados = new ArrayList<>();
         for (Contato contato : contatos){
@@ -145,7 +141,6 @@ class Agenda{
         }
         contatos.get(busca(nome)).favorito = true;
     }
-    
     public void unstar(String nome){
         if (contatos.get(busca(nome)).favorito != true){
             System.out.println("contato não é favorito");
@@ -153,7 +148,6 @@ class Agenda{
         }
         contatos.get(busca(nome)).favorito = false;
     }
-
     public void starred(){
         String saida = "";
         for (Contato contato : contatos){
@@ -163,7 +157,6 @@ class Agenda{
         }
         System.out.println(saida);
     }
-
     public String toString(){
         String saida = "";
         for (Contato contato : contatos){
