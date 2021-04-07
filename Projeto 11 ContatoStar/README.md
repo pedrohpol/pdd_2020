@@ -4,4 +4,4 @@
 
 3. não consegui entender bem o que o prjeto pedia;
 
-4. fiz em mais ou menos 1h e meia
+4. fiz em mais ou menos 2h 
